@@ -3,6 +3,8 @@ import cv2
 webcam=cv2.VideoCapture(0, cv2.CAP_DSHOW)
 face_cascade= cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 profile_cascade= cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_profileface_default.xml")
+t0=time.time()
+
 
 def rett(detected, image, color, flip=False):
     img=image.shape[]
